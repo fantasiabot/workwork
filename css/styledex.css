@@ -1,0 +1,188 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", serif;
+}
+
+body {
+  background-color: #F6F6FF;
+  color: black;
+}
+
+header {
+  background-color: #000000;
+  padding: 10px 20px;
+  font-optical-sizing: auto;
+  font-size: 0.8rem;
+  font-weight: 200;
+
+  word-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  gap: 30px;
+  
+}
+
+nav ul {
+  display: flex;
+
+  list-style: none;
+  align-content: flex-start;  
+  gap: 30px;
+}
+
+nav a {
+  color:#ffffff;
+  text-decoration: none; 
+}
+
+
+main {
+ 
+  padding: 20px 20px;
+}
+
+
+
+
+.intro {
+  display: flex;
+  flex-direction: row;
+
+  align-items: flex-start;
+}
+
+
+
+.introtext {
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
+  
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* PORTFOLIO */
+
+.portfolio h1 {
+
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 0.5px;
+  letter-spacing: 0.5px;
+
+  
+
+}
+
+/* Estilo minimalista y moderno */
+
+.portabox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  
+  justify-items: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.box, .box2 {
+  width: 100%;  
+  max-width: 300px;
+  aspect-ratio: 1 / 1; /* Mantiene la proporción cuadrada */
+
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover, .box2:hover {
+  transform: scale(1.05);
+}
+
+.box video, .box iframe {
+  width: 100%;  
+  height: 100%;  
+  object-fit: cover;
+
+}
+
+.box2 img, .box img {
+  width: 100%;  
+  height: 100%;  
+  object-fit: cover;
+ 
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+
+
+
+
+
+  .portfolio h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+
+  .introtext {
+    font-family: "Noto Sans", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-bottom: 2px;
+   
+    
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  
+
+
+
+  
+  main {
+  
+    padding: 5px 20px;
+  }
+
+}
+
+
+
